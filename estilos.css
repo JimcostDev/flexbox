@@ -84,11 +84,34 @@ aside {
 
 aside .ad {
 	font-size: 30px;
-	text-align: center;
-	color: #fff;
+	text-align: left;
 	padding: 50px 0;
 	/*margin: 20px 0;*/
-	background: #dab80e;
+}
+
+aside h4{
+	color: #001028;
+	border-bottom: 2px solid #001028;
+	width: 70%;
+	margin: auto;
+	font-size: 20px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+aside p{
+	color: #001028;
+	font-size: 16px;
+	padding-left: 30px;
+}
+
+aside .ad a{
+text-decoration: none;
+display: inline-block;
+color: #001028;
+}
+aside .ad a:hover{
+	text-decoration:underline;
 }
 
 footer {
@@ -114,7 +137,7 @@ footer .redes-sociales a:hover {
 	border:none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 973px) {
 	.main {
 		width: 100%;
 	}
@@ -165,7 +188,7 @@ footer .redes-sociales a:hover {
 	} 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 676px) {
 	aside {
 		display: none;
 	}
