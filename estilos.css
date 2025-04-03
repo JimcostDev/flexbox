@@ -1,195 +1,210 @@
+/* Variables CSS y Reset */
+:root {
+    --primary-color: #1a365d;    /* Azul oscuro principal */
+    --secondary-color: #2d6bc4;  /* Azul secundario */
+    --accent-color: #FF5D01;     /* Naranja Astro */
+    --text-color: #2d3748;       /* Gris oscuro texto */
+    --light-bg: #f7fafc;        /* Fondo claro */
+    --white: #ffffff;
+}
+
 * {
-	padding: 0;
-	margin: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
-	background: #000 url('img/fondo.jpg');
-	background-size: cover;
-	background-attachment: fixed;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-bg);
 }
 
- .contenedor {
-	margin: auto;
-	width: 90%;
-	max-width: 1000px;
-	display: flex;
-	flex-direction:row;
-	flex-wrap:wrap;
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
-header {
-	width: 100%;
-	padding: 50px 0;
-
-	display: flex;
-	flex-direction:row;
-	flex-wrap:wrap;
-	justify-content:space-between;
-	align-items:center;
+/* Header - Logo blanco */
+.header {
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-header .menu a {
-	color: #fff;
-	text-decoration: none;
-	margin-right:40px;
-	font-size: 18px;
+.logo {
+    padding: 0.5rem 1rem;
+	cursor: pointer;
 }
 
-header .menu a:hover 
-{
-	border-bottom: 2px solid #fff;
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
 }
 
-.main {
-	background: #fff;
-	padding: 20px;
-	width: 70%;
+.nav-link:hover {
+    color: var(--accent-color);
 }
 
-.main article .thumb {
-	margin-bottom: 20px;
+/* Hero Section */
+.hero {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding: 4rem 0;
 }
 
-.main article .thumb img {
-	vertical-align: top;
-	width: 100%;
+.hero-content {
+    flex: 1;
 }
 
-.main article h2 {
-	margin-bottom: 20px;
-	font-weight: normal;
-	font-size: 32px;
+.hero-title {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
 }
 
-.main article p {
-	margin-bottom: 20px;
-	font-size: 14px;
-	line-height: 27px;
+.hero-subtitle {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
 }
 
-aside {
-	width: 30%;
-	background: #f7cd00;
-	padding: 20px;
-	display: flex;
-	flex-direction:column;
-	flex-wrap:wrap;
-	justify-content:space-between;
+.profile-image {
+    border-radius: 15px;
+    max-width: 450px;
+    height: auto;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
 }
 
-aside .ad {
-	font-size: 30px;
-	text-align: left;
-	padding: 50px 0;
-	/*margin: 20px 0;*/
+/* Habilidades */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-aside h4{
-	color: #001028;
-	border-bottom: 2px solid #001028;
-	width: 70%;
-	margin: auto;
-	font-size: 20px;
-	margin-bottom: 15px;
-	text-align: left;
+.skill-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid #e2e8f0;
 }
 
-aside p{
-	color: #001028;
-	font-size: 16px;
-	padding-left: 30px;
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
-aside .ad a{
-text-decoration: none;
-display: inline-block;
-color: #001028;
-}
-aside .ad a:hover{
-	text-decoration:underline;
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
-footer {
-	margin: 20px 0;
-	background: rgba(255,255,255,.2);
-	padding: 20px;
-	width: 100%;
-	color: #fff;
-	 display: flex;
-	flex-direction:row;
-	flex-wrap:no-wrap;
-	justify-content:space-between; 
+.astro-icon {
+    color: var(--accent-color);
 }
 
-footer .redes-sociales a {
-	color: #fff;
-	border-bottom: 1px solid #fff;
-	margin-left: 20px;
-	text-decoration: none;
+/* Sidebar */
+.sidebar {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 3rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.03);
 }
 
-footer .redes-sociales a:hover {
-	border:none;
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    color: var(--text-color);
 }
 
-@media screen and (max-width: 973px) {
-	.main {
-		width: 100%;
-	}
-
-	aside {
-		width: 100%;
-		flex-direction:row;
-	}
-
-	aside .ad {
-		width: 40%;
-	}
+.social-grid {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1.5rem;
 }
 
-@media screen and (max-width: 480px) {
-	header {
-		flex-direction:column;
-		padding-bottom: 20px; 
-	}
-
-	header .menu {
-		width: 100%;
-		background: rgba(255,255,255,.2);
-		text-align: center;
-		padding: 20px;
-	}
- 
-	header .logo {
-		margin-bottom: 20px;
-	}
-
-	header .menu a {
-		margin:0 20px; 
-	}
-
-	footer {
-		flex-direction:column;
-		text-align: center;
-	}
-
-	footer .autor {
-		order:2;
-	}
-
-	footer .redes-sociales {
-		order:1;
-		margin-bottom: 20px;
-	} 
+.social-link {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 676px) {
-	aside {
-		display: none;
-	}
-} 
+.social-link:hover {
+    background: var(--accent-color);
+    color: var(--white);
+}
+
+/* Footer */
+.main-footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-link {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .header {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-footer {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .profile-image {
+        max-width: 100%;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+}

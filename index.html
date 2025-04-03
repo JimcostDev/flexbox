@@ -1,87 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Layout con Flexbox</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/67714e5665.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de Ronaldo Jiménez - Desarrollador Full Stack">
+    <meta name="keywords" content="desarrollo web, python, astro, portfolio, programación">
+    <title>JimcostDev | Portfolio Profesional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/67714e5665.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-	<div class="contenedor">
-		<header>
-			<div class="logo">
-				<img src="img/logo.png" alt="">
-			</div>
-			<nav class="menu">
-				<a href="#">Inicio</a>
-				<a href="#">Blog</a>
-				<a href="#">Contacto</a>
-			</nav>
-		</header>
-		<aside>
-			<div class="ad">
-				<h4>CONTACTO</h4>
-				<p><i class="fas fa-mobile"></i> (+57) 321 907 1059</p>
-				<p><i class="fas fa-map-marker-alt"></i> Borrero Ayerbe</p>
-				<p> <i class="fas fa-envelope"></i> jimcostdev@gmail.com</p>
-				<p><i class="fas fa-link"></i> </i> <a href="http://www.jimcostdev.com" target="_blank">www.jimcostdev.com</a></p>
-			</div>
-			<div class="ad">
-				<h4>REDES SOCIALES</h4>
-				<p><i class="fab fa-github"></i> </i> <a href="https://github.com/JimcostDev" target="_blank">@JimcostDev</a></p>
-				<p><i class="fab fa-instagram"></i> </i> <a href="https://www.instagram.com/jimcostdev" target="_blank">@jimcostdev</a></p>
-				<p><i class="fab fa-twitter"></i> </i> <a href="https://twitter.com/JimcostDev" target="_blank">@JimcostDev</a></p>
-				<p><i class="fab fa-linkedin"></i> </i> <a href="https://www.linkedin.com/in/ronaldo-jimenez" target="_blank">@ronaldo-jimenez</a></p>
-			</div>
-			<div class="ad">
-				<h4>HABILIDADES</h4>
-				<p> <i class="fab fa-figma"></i> Figma</p>
-				<p> <i class="fas fa-database"></i> SQL</p>
-				<p> <i class="fab fa-git-alt"></i> Git</p>
-				<p> <i class="fab fa-windows"></i> C# & .NET</p>
-				<p> <i class="fab fa-python"></i> Python</p>
-			</div>
-			<div class="ad">
-				<h4>REFERENCIAS</h4>
-				<p> <i class="fas fa-envelope"></i> sistemas@utap.edu.co</p>
-				<p> <i class="fas fa-envelope"></i> cbalanta@utap.edu.co</p>
-			</div>
-		</aside>
-		<section class="main">
-			<article>
-				<div class="thumb">
-					<img src="img/thumb.jpg" alt="">
-				</div>
-				<h2>RONALDO JIMÉNEZ ACOSTA</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="contenedor">
+        <!-- Header - Cabecera con logo blanco -->
+        <header class="header">
+            <div class="logo">
+				<a href="/">
+					<img src="img/logo.webp" alt="Logo JimcostDev" width="64" height="64">
+				</a>
+            </div>
+            <nav class="menu" aria-label="Navegación principal">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+        </header>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</article>
-		</section>
+        <!-- Sección Hero - Presentación -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Ronaldo Jiménez Acosta</h1>
+                <p class="hero-subtitle">Desarrollador Full Stack </p>
+                <p class="hero-text">Creando soluciones web modernas</p>
+            </div>
+            <div class="hero-image">
+                <img src="img/thumb.webp" alt="Ronaldo Jiménez trabajando" class="profile-image">
+            </div>
+        </section>
 
-		
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            <article class="about-me">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-python skill-icon"></i>
+                        <h3>Python Avanzado</h3>
+                        <p>Desarrollo de aplicaciones con FastAPI y Django</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-rocket skill-icon astro-icon"></i>
+                        <h3>Astro Framework</h3>
+                        <p>Sitios estáticos ultra-rápidos y modernos</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database skill-icon"></i>
+                        <h3>Bases de Datos</h3>
+                        <p>PostgreSQL, SQL Server y MongoDB</p>
+                    </div>
+                </div>
+            </article>
+        </main>
 
-		<footer>
-			<div class="autor">
-				<p>Creado por Ronaldo Jiménez Acosta - JimcostDev</p>
-			</div>
-			<div class="redes-sociales">
-				<a href="http://www.facebook.com/Jimcost727">Facebook</a>
-				<a href="http://www.twitter.com/JimcostDev">Twitter</a>
-			</div>
-		</footer>
-	</div>
+        <!-- Sidebar - Contacto y Redes -->
+        <aside class="sidebar">
+            <section class="contact-info">
+                <h2 class="sidebar-title">Contacto Directo</h2>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:jimcostdev@gmail.com" class="contact-link">jimcostdev@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/ronaldo-jimenez" target="_blank" 
+                       rel="noopener noreferrer" class="contact-link">Perfil LinkedIn</a>
+                </div>
+            </section>
+
+            <section class="social-links">
+                <h2 class="sidebar-title">Redes Sociales</h2>
+                <div class="social-grid">
+                    <a href="https://github.com/JimcostDev" class="social-link" target="_blank" 
+                       rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://youtube.com/@jimcostdev" class="social-link" target="_blank" 
+                       rel="noopener noreferrer" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/jimcostdev" class="social-link" target="_blank" 
+                       rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </section>
+        </aside>
+
+        <!-- Footer - Pie de página -->
+        <footer class="main-footer">
+            <p class="copyright">&copy; 2025 JimcostDev. Todos los derechos reservados.</p>
+            <nav class="footer-nav" aria-label="Enlaces legales">
+                <a href="#privacidad" class="footer-link">Privacidad</a>
+                <a href="#terminos" class="footer-link">Términos</a>
+            </nav>
+        </footer>
+    </div>
 </body>
 </html>
